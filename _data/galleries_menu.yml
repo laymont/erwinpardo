@@ -1,0 +1,17 @@
+  - title: Food & Beverage
+    url: "/pages/galleries/foodandbeverage"
+    portrait: "/assets/galleries/foodandbeverage/002.jpg"
+    thumbnails: "/assets/galleries/foodandbeverage"
+    photos: "/assets/galleries/foodandbeverage"
+
+  - title: Hotel & Resort
+    url: "/pages/galleries/hotelandresort"
+    portrait: "/assets/galleries/hotelandresort/001.jpg"
+    thumbnails: "/assets/galleries/hotelandresort"
+    photos: "/assets/galleries/hotelandresort"
+    
+  - title: Landscaping
+    url: "/pages/galleries/landscaping"
+    portrait: "/assets/galleries/landscaping/001.jpg"
+    thumbnails: "/assets/galleries/landscaping"
+    photos: "/assets/galleries/landscaping"

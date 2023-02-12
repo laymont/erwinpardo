@@ -1,0 +1,22 @@
+<!-- Crear array -->
+{% assign images = "" | split: ',' %}
+<!-- Asignar valores al array -->
+{% for image in site.static_files %}
+  {% if image.path contains 'galleries/foodandbeverage' %}
+    {% assign images = images | push: image %}
+  {% endif %}
+  {% if image.path contains 'galleries/hotelandresort' %}
+    {% assign images = images | push: image %}
+  {% endif %}
+  {% if image.path contains 'galleries/landscaping' %}
+    {% assign images = images | push: image %}
+  {% endif %}
+{% endfor %}
+
+<section>
+  <div class="container w-full pb-28 mx-auto mb-10 gap-1 columns-3 space-y-1">
+    {% for item in images %}
+      <img alt="image" class="break-inside-avoid" src="{{ site.baseurl }}{{ item.path}}">
+    {% endfor %}
+  </div>
+  </section>

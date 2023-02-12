@@ -1,0 +1,23 @@
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+title: "Erwin Pardo" # the name of your site, e.g. ACME Corp.
+email: erwinpardo@gmail.com
+
+plugins:
+  - jekyll-postcss
+
+postcss:
+  cache: false
+
+defaults:
+  - scope:
+      path: "/pages/galleries"
+      type: "pages"
+    values:
+      layout: "page"
+      author: "Erwin Pardo"
+      category: "gallery"
+  - scope:
+      path: "assets/galleries"
+    values:
+      image: true

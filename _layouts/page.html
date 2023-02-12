@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    <script src="/assets/js/utils.js"></script>
+  </head>
+  <body class="scroll-smooth">
+    <div>
+      {% include navbar.html %}
+    </div>
+    <div class="w-full mx-auto flex flex-col space-y-2 leading-relaxed my-10">
+        {{ content }}
+    </div>
+    <div>
+        {% include footer.html %}
+    </div>
+  </body>
+</html>
