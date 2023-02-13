@@ -4,8 +4,11 @@ title: Contact
 ---
 
 <section class="w-full h-screen mx-auto p-6 bg-[url('/assets/img/background_contact.jpg')] bg-no-repeat bg-cover bg-center bg-fixed">
-	<div>
+	<div class="mt-12">
 		<form novalidate="" class="container w-full max-w-xl p-8 mx-auto space-y-6 rounded-md shadow bg-indigo-900/75 dark:bg-gray-900 ng-untouched ng-pristine ng-valid">
+		<p class="text-white font-semibold">
+			Email me for pricing and booking inquires. Please be sure to include information such as the timeframe of the shoot, location and number of images needed. Preferably a detailed shot list
+		</p>
 		<h2 class="w-full text-3xl text-white font-bold leading-tight">Contact us</h2>
 		<div>
 			<label for="name" class="block mb-1 ml-1 text-white">Name</label>

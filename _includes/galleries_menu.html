@@ -13,8 +13,8 @@
   {% endif %}
 {% endfor %}
 
-<section>
-  <div class="container w-full pb-28 mx-auto mb-10 gap-1 columns-3 space-y-1">
+<section class="px-0.5">
+  <div class="w-full mx-auto mb-7 gap-0.5 md:columns-3 colums-1 space-y-0.5">
     {% for item in images %}
       <img alt="image" class="break-inside-avoid" src="{{ site.baseurl }}{{ item.path}}">
     {% endfor %}
