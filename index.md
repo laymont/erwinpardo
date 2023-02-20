@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "ERWIN PARDO"
+title: "HOME"
 ---
 
 {% include navbar.html %}

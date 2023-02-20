@@ -1,10 +1,16 @@
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
-title: "Erwin Pardo" # the name of your site, e.g. ACME Corp.
+title: "ERWIN PARDO PHOTOGRAPHY" # the name of your site, e.g. ACME Corp.
 email: erwinpardo@gmail.com
+social:
+  name: Erwin Pardo
+  links:
+    - https://twitter.com/espg72
+    - https://www.instagram.com/erwinpardoph/?igshid=YmMyMTA2M2Y%3D
 
 plugins:
   - jekyll-postcss
+  - jekyll-seo-tag
 
 postcss:
   cache: false

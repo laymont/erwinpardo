@@ -1,0 +1,48 @@
+---
+layout: page
+title: "Hotel and Resort"
+author: "Erwin Pardo"
+category: gallery
+---
+
+<!-- Crear array -->
+{% assign images = "" | split: ',' %}
+<!-- Asignar valores al array -->
+{% for image in site.static_files %}
+{% if image.path contains 'galleries/hotelandresort/' %}
+{% assign images = images | push: image %}
+{% endif %}
+{% endfor %}
+
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+    crossorigin="anonymous"></script>
+
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"
+    integrity="sha512-k2GFCTbp9rQU412BStrcD/rlwv1PYec9SNrkbQlo6RZCf75l6KcC3UwDY8H5n5hl4v77IDtIPwOk9Dqjs/mMBQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.css"
+    integrity="sha512-Woz+DqWYJ51bpVk5Fv0yES/edIMXjj3Ynda+KWTIkGoynAMHrqTcDUQltbipuiaD5ymEo9520lyoVOo9jCQOCA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<script>
+    lightbox.option({
+        'fitImagesInViewport': false
+    })
+</script>
+
+<section class="px-0.5">
+    <div class="w-full mx-auto mb-7 gap-0.5 md:columns-3 colums-1 space-y-0.5">
+        {% for item in images %}
+        <div class="break-inside-avoid">
+            <a href="{{ site.baseurl }}{{ item.path}}" data-lightbox="gallery">
+                <img alt="image" class="w-auto"
+                    src="{{ site.baseurl }}{{ item.path}}">
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</section>
